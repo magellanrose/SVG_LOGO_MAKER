@@ -1,11 +1,19 @@
 class Circle {
     static generateCircleLogo(data) {
         return `
-    <svg version="1.1"
-     width="300" height="200"
-     xmlns="http://www.w3.org/2000/svg">
+        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="${data.color}" />
+      </svg>
+`
+    }
+}
 
-</svg>
+class Triangle {
+    static generateTriangleLogo(data) {
+        return `
+        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,10 90,90 10,90" stroke="black" stroke-width="3" fill="${data.color}" />
+      </svg>
 `
     }
 }
