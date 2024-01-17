@@ -13,7 +13,23 @@ const questions = [
     }
 ]
 
+function writeNewFile(name, data){
+  const file = generateLogo(data);
+  fs.writeFile(name, file, function(error) {
+    if (error) {
+      return console.log(error)
+    }
+    console.log('Logo is generated!')
+});
+}
 
+function init() {
+  inquirer.prompt(questions).then(function(data){
+    const name = 'logo.svg';
+    writeNewFile(name, data);
+  });
+}
+init();
 
 
 
