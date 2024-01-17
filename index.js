@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const generateLogo = require('./generateLogo')
 
 const questions = [
     {
@@ -10,11 +10,14 @@ const questions = [
         choices: ['Triangle', 'Circle', 'Square']
     },
     {
+      type: 'input',
+      message: 'What color do you want your shape to be?',
+      name: 'color'
         
     }
 ]
 
-function writeNewFile(name, data){
+function writeToFile(name, data){
   const file = generateLogo(data);
   fs.writeFile(name, file, function(error) {
     if (error) {
@@ -27,7 +30,7 @@ function writeNewFile(name, data){
 function init() {
   inquirer.prompt(questions).then(function(data){
     const name = 'logo.svg';
-    writeNewFile(name, data);
+    writeToFile(name, data);
   });
 }
 init();
