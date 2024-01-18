@@ -45,6 +45,8 @@ function generateLogo(data) {
         case 'Square':
             return Square.generateSquareLogo(data);
             break;
+        default:
+            return console.log('Error');
     }
 }
 
