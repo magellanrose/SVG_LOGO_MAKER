@@ -21,5 +21,5 @@ MIT </br>
 ## Video
 https://drive.google.com/file/d/1066lYM8K8UXvSbBvnH6dML_YP5oK2aEB/view
 ## Questions
-Github: https://github.com/magellanrose/README_GENERATOR </br>
+Github: https://github.com/magellanrose</br>
 Email: nicholasfvacca@gmail.com
