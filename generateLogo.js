@@ -34,14 +34,14 @@ function generateLogo(data) {
         case 'Circle':
             return Circle.generateCircleLogo(data);
             break;
-        
+
         case 'Triangle':
             return Triangle.generateTriangleLogo(data);
             break;
 
         case 'Square':
-                return Square.generateSquareLogo(data);
-                break;
+            return Square.generateSquareLogo(data);
+            break;
     }
 }
 

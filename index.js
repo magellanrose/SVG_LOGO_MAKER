@@ -13,7 +13,16 @@ const questions = [
     type: 'input',
     message: 'What color do you want your shape to be?',
     name: 'color'
-
+  },
+  {
+    type: 'input',
+    message: 'Enter three characters you would like to be in your shape',
+    name: 'characters'
+  },
+  {
+    type: 'input',
+    message: 'What color would your text characters to be?',
+    name: 'character_color'
   }
 ]
 
