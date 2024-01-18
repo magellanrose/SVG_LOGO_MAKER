@@ -3,35 +3,36 @@ const fs = require('fs');
 const generateLogo = require('./generateLogo')
 
 const questions = [
-    {
-        type: 'list',
-        message: 'What shape would you like to use?',
-        name: 'shape',
-        choices: ['Triangle', 'Circle', 'Square']
-    },
-    {
-      type: 'input',
-      message: 'What color do you want your shape to be?',
-      name: 'color'
-        
-    }
+  {
+    type: 'list',
+    message: 'What shape would you like to use?',
+    name: 'shape',
+    choices: ['Circle', 'Triangle', 'Square']
+  },
+  {
+    type: 'input',
+    message: 'What color do you want your shape to be?',
+    name: 'color'
+
+  }
 ]
 
-function writeToFile(name, data){
+function writeToFile(name, data) {
   const file = generateLogo(data);
-  fs.writeFile(name, file, function(error) {
+  fs.writeFile(name, file, (error) => {
     if (error) {
       return console.log(error)
     }
     console.log('Logo is generated!')
-});
+  });
 }
 
 function init() {
-  inquirer.prompt(questions).then(function(data){
-    const name = 'logo.svg';
-    writeToFile(name, data);
-  });
+  inquirer.prompt(questions)
+    .then((data) => {
+      const name = 'logo.svg';
+      writeToFile(name, data);
+    });
 }
 init();
 
