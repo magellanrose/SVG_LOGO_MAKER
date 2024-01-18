@@ -33,7 +33,7 @@ function writeToFile(name, data) {
     if (error) {
       return console.log(error)
     }
-    console.log('Logo is generated!')
+    console.log('SVG Logo is generated successfully!')
   });
 }
 
