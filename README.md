@@ -18,6 +18,9 @@ https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs
 MIT </br>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Mock Up
+![Mock-up](./assets/Screenshot%20(11).png)
+
 ## Video
 https://drive.google.com/file/d/1066lYM8K8UXvSbBvnH6dML_YP5oK2aEB/view
 ## Questions
