@@ -28,33 +28,22 @@ class Square {
     }
 }
 
-function generateLogo(data){
-    let shape = '';
-    if (data.shape === 'Circle'){
-        shape = new Circle(data.shape)
-    }else if (data.shape === 'Triangle'){
-shape = new Triangle(data.shape)
-    }else if(data.shape === 'Square'){
-        shape = new Square(data.shape)
-    }
-    return shape.render();
-}
 
-// function generateLogo(data) {
-//     switch (data.shape) {
-//         case 'Circle':
-//             return Circle.generateCircleLogo(data);
-//             break;
+function generateLogo(data) {
+    switch (data.shape) {
+        case 'Circle':
+            return Circle.generateCircleLogo(data);
+            break;
         
-//         case 'Triangle':
-//             return Triangle.generateTriangleLogo(data);
-//             break;
+        case 'Triangle':
+            return Triangle.generateTriangleLogo(data);
+            break;
 
-//         case 'Square':
-//                 return Square.generateSquareLogo(data);
-//                 break;
-//     }
-// }
+        case 'Square':
+                return Square.generateSquareLogo(data);
+                break;
+    }
+}
 
 
 
