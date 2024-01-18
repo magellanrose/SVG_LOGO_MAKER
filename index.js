@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateLogo = require('./generateLogo')
 
+// QUESTIONS THAT WILL BE PROMPTED INTO THE TERMINAL
 const questions = [
   {
     type: 'list',
